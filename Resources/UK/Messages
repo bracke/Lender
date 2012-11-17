@@ -1,0 +1,65 @@
+# StrongEd$Mode=Message
+_TaskName:Lender
+VERS:2.06 (2005-05-21)
+# Obey file error messages
+DESCRIPTION:Keep track of things.
+RO:Lender needs RISC OS 3 or later.
+TASKEXIST:You can only have one copy of Lender running at once.
+NESTED:Lender requires the Nested Window Manager. This can be obtained by downloading the Universal Boot sequence from http://acorn.riscos.com/
+MODCLIB:You need the SharedCLibrary to run Lender. 
+MODTB:You need 'Toolbox' module (v1.71) to run Lender.
+MODCM:You need the 'ColourMenu' module (v0.24) to run Lender.
+MODCD:You need the 'ColourDBox' module (v0.23) to run Lender.
+MODDCS:You need the 'DCS' module (v1.16) to run Lender.
+MODFI:You need the 'FileInfo' module (v0.22) to run Lender.
+MODFB:You need the 'FontDBox' module (v0.22) to run Lender.
+MODFM:You need the 'FontMenu' module (v0.27) to run Lender.
+MODIB:You need the 'IconBar' module (v1.22) to run Lender.
+MODMU:You need the 'Menu' module (v0.40) to run Lender.
+MODPT:You need the 'PrintDBox' module (v0.20) to run Lender.
+MODPI:You need the 'ProgInfo' module (v0.20) to run Lender.
+MODSAVE:You need the 'SaveAs' module (v0.22) to run Lender.
+MODSC:You need the 'Scale' module (v0.19) to run Lender.
+MODWD:You need the 'Window' module (v1.79) to run Lender.
+MODTA:You need the 'ToolAction' module (v0.23) to run Lender.
+MODTG:You need the 'TextGadgets' module (v0.49) to run Lender.
+MODURI:You need the 'URI' module to run Lender.
+MODTW:You need the taskwindow module to run Lender.
+# Error messages
+CHOICES:Error reading choices. %0
+CONFIGURE:Error running !Configure. %0
+UNTRAPPED:Untrapped exception. %0
+BUGZQUERY:Error answering a query from Bugz. %0
+BUGZCREATE:Error creating Bugz report. %0
+NOBUGZ:Please locate the Bugz application. %0
+TOOLBOXERROR:Error processing Toolbox Error. %0
+HOMEPAGE:Error viewing Homepage. %0
+SENDEMAIL:Error sending E-Mail. %0
+MQUIT:Error receiving 'Quit' Message. %0
+TQUIT:Error receiving Toolbox 'Quit' Message. %0
+VIEWMANUAL:Error opening Manual. %0
+VIEWIHELP:Error running starting interactive help. %0
+VIEWCHAPTER:Error opening chapter in manual. %0
+POSSAVE:Error while saving the window position. %0
+DELENTRY:Do you really want to delete the selected movie(s) ?
+DELBUTTON:Delete
+NORESULT:No matching items were found. %0
+HANDLE_FIND:An error has occured during the search. %0
+HAND_SORT:Error during sort. %0
+HANDLE_SCROLLIST:Error after scrolllist selection. %0
+HANDLE_REMOVEITEM:Error deleting item. %0
+HANDLE_ADDITEM:Error while adding item. %0
+HANDLE_EDITITEM:Error while editing item. %0
+HANDLE_OADDITEM:Error while opening 'Add item' window. %0
+HANDLE_CHANGEITEM:Error while changing item. %0
+HANDLE_CSVREAD:Error while reading CSV.
+HANDLE_SAVECSV:Error while saving CSV.
+HANDLE_DATE:Error after click on 'Today' button. %0
+BADDATA:Some inconsistent data has been discarded.
+OPENWINDOW:Error opening main window. %0
+RESIZE:An error has occured while resizing the list gadget. %0
+FIELDCHANGED:An error has occured while handling the changed filter. %0
+#
+NAMEHEADER:Name
+LENTTOHEADER:Borrower
+DATE:Date

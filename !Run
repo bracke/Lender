@@ -1,0 +1,26 @@
+Run <Obey$Dir>.!Boot
+Run <Lender$Dir>.Resources.IsTask Lender
+If <Lender$Task> <> 0 Then Run <Lender$Dir>.Resources.ReadToken LenderRes:Messages TASKEXIST
+If <Lender$Task> <> 0 Then ERROR 0 <ReadToken$Value>
+
+|
+RMEnsure UtilityModule 3.00 Run <Lender$Dir>.Resources.ReadToken LenderRes:Messages RO
+RMEnsure UtilityModule 3.00 ERROR 0 <ReadToken$Value>
+| 
+RMEnsure WindowManager 3.80 Run <Lender$Dir>.Resources.ReadToken LenderRes:Messages NESTED
+RMEnsure WindowManager 3.80 ERROR 0 <ReadToken$Value>
+|
+RMEnsure SharedCLibrary 0.01 System:modules.clib
+RMEnsure SharedCLibrary 0.01 Run <Lender$Dir>.Resources.ReadToken LenderRes:Messages MODCLIB
+RMEnsure SharedCLibrary 0.01 ERROR 0 <ReadToken$Value>
+|
+Run <Lender$Dir>.!Toolbox
+|
+UnSet Lender$Start_URI_Handler
+RMEnsure AcornURI 0.12 Set Lender$Start_URI_Handler 1
+<Lender$Dir>.Resources.IgnoreErr RMEnsure AcornURI 0.12 RMLoad System:Modules.Network.URI
+RMEnsure AcornURI 0.12 UnSet Lender$Start_URI_Handler
+RMEnsure AcornURI 0.12 Run <Lender$Dir>.Resources.ReadToken LenderRes:Messages MODURI
+RMEnsure AcornURI 0.12 ERROR 0 <ReadToken$Value>
+|
+<Lender$Dir>.Resources.MinSlot <Lender$Dir>.!RunImage %*0

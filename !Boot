@@ -1,0 +1,12 @@
+Run <Obey$Dir>.Resources.ResFind Lender
+|
+Set Lender$Help LenderRes:Lender
+Set Lender$Version "2.06"
+Set Lender$Web "http://www.arcsite.de/hp/bracke/"
+Set Lender$Title "Lender"
+Set Lender$Publisher "Bent Bracke"
+Set Lender$Description "Keep track of things."
+Run <Lender$Dir>.Resources.ReadToken LenderRes:Messages DESCRIPTION
+do Set Lender$Description <ReadToken$Value>
+|
+Iconsprites <Lender$Dir>.!Sprites
